@@ -1,0 +1,23 @@
+h1{
+    color: rgb(23, 137, 137);
+}
+li{
+    color:brown;
+}
+body{
+    background-color:aqua;
+}
+.Firstdiv{
+    background: aquamarine;
+    border-color: black;
+    border-width: 5px;
+    border-style: dotted;
+}
+.Seconddiv{
+    background-color: yellowgreen;
+    color:aliceblue;
+    border: 5px double black;
+}
+span{
+    color: black;
+}
