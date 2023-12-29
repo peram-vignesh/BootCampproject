@@ -1,0 +1,22 @@
+table{
+    margin: auto;
+}
+td{
+    padding: 50px;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+th{
+    padding: 50px;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+div{
+    margin: auto;
+    text-align: center;
+    margin-bottom: 3cm;
+    background-color: aqua;
+    border:aqua none 3cm;
+    padding:80px;
+    padding-left: 40px;
+}

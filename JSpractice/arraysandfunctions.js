@@ -23,4 +23,4 @@ function listoperation(array1,element,array2){
 const list2=[1,4,4,2,4]
 console.log(list2)
 listoperation(list2,[1,3,4,,24,2],[1,1,0,13,23,43,2])
-console.log(list2)
+console.log(list2) 
