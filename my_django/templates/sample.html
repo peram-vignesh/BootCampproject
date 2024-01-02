@@ -1,10 +1,12 @@
 <!DOCTYPE html>
+{%load staticfiles%}
 <html>
     <head>
-        <title>This is a sample page</title>
+        <title>This is a picture from moon knight</title>
     </head>
     <body>
-        <p>This is another sample</p>
+        <p>This is another saple</p>
         {{insert_me}}
+        <img src= "{% static 'images/image1.jpg' %}" alt="Image does not exist">
     </body>
 </html>
