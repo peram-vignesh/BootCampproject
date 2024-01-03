@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <title>This is my html test</title>
+    </head>
+    <body>
+        <h1>This is a table about names and gmails</h1>
+        <div>
+            {% if test_table %}
+            <table>
+                <thead>
+                    <th>Firstname</th>
+                    <th>LAst Name</th>
+                    <th>Gmail</th>
+                </thead>
+                {% for acc in test_table %}
+                <tr>
+                    <td>{{ acc.First_name }}</td>
+                    <td>{{ acc.Last_name }}</td>
+                    <td>{{ acc.email }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+            {% else %}
+            <p>Directory does not exist</p>
+            {% endif %}
+        </div>
+    </body>
+</html>
