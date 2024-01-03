@@ -6,8 +6,27 @@
         <link rel="stylesheet" href="{% static 'css/sample.css'%}"/>
     </head>
     <body>
-        <p>This is another sample</p>
+        <h1>This is access to records</h1>
+        <p>Django level Two</p>
         {{insert_me}}
-        <img src= "{% static 'images/image1.jpg' %}" alt="Image does not exist" class="sample">
+        <div class="djangotwo">
+            {% if 'access_records' %} 
+            <table border="2px">
+                <thead>
+                    <th>Site Name</th>
+                    <th>Date accessesed</th>
+                </thead>
+                {% for acc in access_records %}
+                <tr>
+                    <td>{{acc.name}}</td>
+                    <td>{{acc.date}} </td>
+                </tr>
+                {% endfor %}
+            </table>
+            {% else %}
+            <p>No accees found</p>
+             {% endif %}
+            
+        </div>
     </body>
 </html>
